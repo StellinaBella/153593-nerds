@@ -4,7 +4,8 @@
     	<meta charset="utf-8">
     	<title>HTML Academy: Нёрдс</title>
     	<link href="http://fonts.googleapis.com/css?family=Roboto:100,400,300,500&amp;subset=latin,cyrillic" rel="stylesheet">
-    	<link rel="stylesheet" href="style.css">
+    	<link rel="stylesheet" href="css/normalize.css">
+    	<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -48,10 +49,10 @@
 					<fieldset class="feature-filter">
 						<legend>Особенности:</legend>
                     	<input type="checkbox" name="slider" id="slider"><label for="slider">Слайдер</label>
-                    	<input type="checkbox" name="advantage" id="vantage"><label for="vantage">Блок преимуществ</label>
+                    	<input type="checkbox" name="vantage" id="vantage"><label for="vantage">Блок преимуществ</label>
                     	<input type="checkbox" name="news" id="news"><label for="news">Новости</label>
                     	<input type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label>
-                    	<input type="checkbox" name="busket" id="busket"><label for="busket">Корзина</label>
+                    	<input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
 					</fieldset>
 					<button class="btn-show">Показать</button>
 				</form>
@@ -68,13 +69,13 @@
 					<a class="filter-sort-up" href="#"></a>
 				</div>
 			</div>
-			<section class="catalog">
+			<section class="catalog-items">
 				<article class="catalog-item">
 					<div class="item-image">
 						<img src="img/avator.jpg" alt="Avator" width="240" height="240">
 					</div>
 					<div class="item-active">
-                        <h4 class="item-active-title">Avator</h4>
+                        <h4 class="item-active-title">Aviator</h4>
                         <p class="item-active-description">Одностраничный макет с авторским дизайном</p>
                         <p class="item-active-btn">8000 Р.</p>
                     </div>					
@@ -121,7 +122,7 @@
 				</article>
 				<article class="catalog-item">
 					<div class="item-image">
-						<img src="img/dovetail.jpg" alt="Dovetail" width="240" alt="240">
+						<img src="img/dovetail.jpg" alt="Dovetail" width="240" height="240">
 					</div>
 					<div class="item-active">
                         <h4 class="item-active-title">Dovetail</h4>
