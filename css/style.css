@@ -4,6 +4,15 @@ body {
 	color: #000000;
 	font-weight: normal;
 	font-family: "Roboto", "Arial", sans-serif;
+	background: #ffffff;
+	background-size: 1200px auto;
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: table;
+  clear: both;
+
 }
 h2 {
 	font-size: 36px;
@@ -17,3 +26,232 @@ h3 {
 	font-weight: normal;
 	text-transform: uppercase;
 }
+.main-header {
+	margin-bottom: 65px;
+}
+.main-header .container-wrapper {
+	background: #eeeeee;
+}
+.container-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.index-logo {
+	float: left;
+	width:187px;
+	height:56px;
+	margin-top: 27px;
+  	margin-left: 160px;
+
+}
+.main-menu {
+	float: right;
+	width: 620px;
+	margin-top: 30px;
+  /* Только для оформления сетки */
+  min-height: 110px;
+}
+.main-menu li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style: none;
+
+}
+.main-menu a {
+	text-decoration: none;
+}
+.slider {
+	width: 100%;
+  /* Только для оформления сетки */
+  min-height: 320px;
+}
+.slide-2,
+.slide-3 {
+	display: none;
+}
+.features {
+  margin-bottom: 60px;
+}
+.features-item {
+  float: left;
+  width: 250px;
+  margin-right: 60px;
+  
+  /* Только для оформления сетки */
+  min-height: 310px;
+}
+.features-item:last-child {
+  margin-right: 0;
+}
+.about-us {
+	padding: 50px 0;
+}
+.about-us-left {
+	float: left;
+	width: 580px;
+	  /* Только для оформления сетки */
+  	min-height: 140px;
+}
+.about-us-right {
+	float: right;
+	width: 250px;
+	  /* Только для оформления сетки */
+  	min-height: 140px;
+}
+.index-content {
+  padding: 10px 0;
+}
+
+.index-content-left {
+	float: left;
+  	width: 580px;
+  /* Только для оформления сетки */
+  	min-height: 160px;
+}
+
+.index-content-right {
+	float: right;
+	width: 250px;
+	margin-right: 0;
+  /* Только для оформления сетки */
+  min-height: 160px;
+}
+.examples-site {
+	margin: 0 50px;
+	border-top: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+	padding-top: 60px;
+	  /* Только для оформления сетки */
+  min-height: 150px;
+}
+.examples-site li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 112px;
+	opacity: 0.2;
+}
+.examples-site li:last-child {
+	margin-right: 0;
+}
+.main-footer {
+	margin-top: 80px;
+}
+.footer-maps-contact {
+
+  /* Только для оформления сетки */
+  min-height: 420px;
+}
+.footer-maps {
+	position: relative;
+	width: 1200px;
+	background: url("../img/map.png") 100%;
+	  min-height: 420px; 
+
+}
+.footer-contact {
+	position: absolute;
+	width: 250px;
+	margin-left: 160px;
+	margin-top: -330px;
+	background: #ffffff;
+	padding: 20px 25px;
+	box-sizing: border-box;
+}
+.write-us {
+	display: none;
+}
+.footer-social {
+  
+  /* Только для оформления сетки */
+  min-height: 210px;
+}
+.footer-social-btn {
+	margin-left: 140px;
+	margin-top: 70px;
+	float: left;
+	width: 320px;	
+}
+.btn-social {
+	margin-right: 28px;
+	padding: 15px;
+	border-radius: 50%;
+	background: #e1e1e1;
+}
+.footer-social-description {
+	margin-top: 20px;
+	float: right;
+	width: 560px;
+}
+
+
+
+/* CATALOG */
+
+
+.caption h1 {
+	margin: 90px 250px;
+	margin-top: 0;
+	width: 700px;
+	text-align: center;
+	font-size: 40px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+.filter-catalog {
+	float: left;
+	width: 270px;
+	margin-left: 60px;
+
+	  /* Только для оформления сетки */
+  min-height: 1150px;
+}
+.catalog-filter-sort ul li{
+	display: inline-block;
+	margin-left: 45px;
+	text-transform: uppercase;
+}
+.catalog-filter-sort span {
+	margin-left: 100px;
+}
+.catalog-filter-sort a {
+	color: #cacaca;
+	text-decoration: none;
+	border-bottom: 1px dotted #00ca74;
+
+}
+
+.catalog-items {
+	margin-right: 20px;
+}
+.catalog-item {
+	float: right;
+	width: 240px;
+	margin-left: 80px;
+}
+.pages {
+	text-align: center;
+}
+.pages li {
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px 10px;
+	background: #f1f1f1;
+	border: 1px solid #f2f2f2;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.page a {
+	text-decoration: none;
+	color: #000000;
+}
+.page span {
+	background: #ffffff;
+	border: 1px solid #f2f2f2;
+}
+
