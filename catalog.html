@@ -9,15 +9,15 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<div class="container-wrapper">
+			<div class="container-wrapper clearfix">
 				<div class="index-logo">
-					<a><img src="img/logo.png" alt="Логотип NЁRDS" width="187" height="56"></a>
+					<a><img src="img/logo.png" alt="Логотип NЁRDS" width="139" height="56"></a>
 				</div>
-				<nav class="main-menu">
+				<nav class="main-menu clearfix">
 				    <ul>
-                        <li><a href="index.html" class="active">Студия</a></li>
+                        <li><a href="index.html">Студия</a></li>
                         <li><a href="#">Клиенты</a></li>
-                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><span class="active">Магазин</span></li>
                         <li><a href="#">Контакты</a></li>
                         <li class="cart icon-cart"><a href="#">Корзина</a></li>
                     </ul>					
@@ -30,29 +30,29 @@
 		<div class="container-wrapper">
 			<aside class="filter-catalog">
 				<form class="filters" method="post" action="https://echo.htmlacademy.ru">
-					<fieldset class="price-filter">
+					<fieldset class="range-filter">
 						<legend>Стоимость:</legend>
-						<div class="range-control">
+						<div class="range-controls">
 							<div class="scale"><div class="bar"></div></div>
 							<div class="toggle min-toggle"></div>
 							<div class="toggle max-toggle"></div>
 						</div>
-						<div class="price-control clearfix">
+						<div class="price-controls clearfix">
                             <label for="min-price" class="for-min-price">от<input class="min-price" type="text" value="0" id="min-price"></label>
                             <label for="max-price" class="for-max-price">до<input class="max-price" type="text" value="15 000" id="max-price"></label>
                         </div>
 					</fieldset>
 					<fieldset class="grid-filter">
 						<legend>Сетка:</legend>	
-						<input type="radio" name="grid-type" id="adaptive"><label for="adaptive">Адаптивная</label>
+						<input type="radio" name="grid-type" id="adaptive" checked=""><label for="adaptive">Адаптивная</label>
                     	<input type="radio" name="grid-type" id="fixed"><label for="fixed">Фиксированная</label>
                     	<input type="radio" name="grid-type" id="rubber"><label for="rubber">Резиновая</label>
 					</fieldset>
 					<fieldset class="feature-filter">
 						<legend>Особенности:</legend>
-                    	<input type="checkbox" name="slider" id="slider"><label for="slider">Слайдер</label>
+                    	<input type="checkbox" name="slider" id="slider" checked><label for="slider">Слайдер</label>
                     	<input type="checkbox" name="vantage" id="vantage"><label for="vantage">Блок преимуществ</label>
-                    	<input type="checkbox" name="news" id="news"><label for="news">Новости</label>
+                    	<input type="checkbox" name="news" id="news" checked><label for="news">Новости</label>
                     	<input type="checkbox" name="gallery" id="gallery"><label for="gallery">Галерея</label>
                     	<input type="checkbox" name="cart" id="cart"><label for="cart">Корзина</label>
 					</fieldset>
@@ -76,16 +76,6 @@
 			<section class="catalog-items">
 				<article class="catalog-item">
 					<div class="item-image">
-						<img src="img/avator.jpg" alt="Avator" width="240" height="240">
-					</div>
-					<div class="item-active">
-                        <h4 class="item-active-title">Aviator</h4>
-                        <p class="item-active-description">Одностраничный макет с авторским дизайном</p>
-                        <p class="item-active-btn">8000 Р.</p>
-                    </div>					
-				</article>
-				<article class="catalog-item">
-					<div class="item-image">
 						<img src="img/sunset.jpg" alt="Sunset" width="240" height="240">
 					</div>
 					<div class="item-active">
@@ -96,12 +86,12 @@
 				</article>
 				<article class="catalog-item">
 					<div class="item-image">
-						<img src="img/forte.jpg" alt="Forte" width="240" height="240">
+						<img src="img/avator.jpg" alt="Avator" width="240" height="240">
 					</div>
 					<div class="item-active">
-                        <h4 class="item-active-title">Forte</h4>
-                        <p class="item-active-description">Отличный макет для личного блога</p>
-                        <p class="item-active-btn">5000 Р.</p>
+                        <h4 class="item-active-title">Aviator</h4>
+                        <p class="item-active-description">Одностраничный макет с авторским дизайном</p>
+                        <p class="item-active-btn">8000 Р.</p>
                     </div>					
 				</article>
 				<article class="catalog-item">
@@ -116,12 +106,12 @@
 				</article>
 				<article class="catalog-item">
 					<div class="item-image">
-						<img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
+						<img src="img/forte.jpg" alt="Forte" width="240" height="240">
 					</div>
 					<div class="item-active">
-                        <h4 class="item-active-title">Avenue</h4>
-                        <p class="item-active-description">Макет для блога о путешествиях</p>
-                        <p class="item-active-btn">8000 Р.</p>
+                        <h4 class="item-active-title">Forte</h4>
+                        <p class="item-active-description">Отличный макет для личного блога</p>
+                        <p class="item-active-btn">5000 Р.</p>
                     </div>					
 				</article>
 				<article class="catalog-item">
@@ -132,6 +122,16 @@
                         <h4 class="item-active-title">Dovetail</h4>
                         <p class="item-active-description">Интернет-магазин с галереей товаров</p>
                         <p class="item-active-btn">14000 Р.</p>
+                    </div>					
+				</article>
+				<article class="catalog-item">
+					<div class="item-image">
+						<img src="img/avenue.jpg" alt="Avenue" width="240" height="240">
+					</div>
+					<div class="item-active">
+                        <h4 class="item-active-title">Avenue</h4>
+                        <p class="item-active-description">Макет для блога о путешествиях</p>
+                        <p class="item-active-btn">8000 Р.</p>
                     </div>					
 				</article>
 			</section>
@@ -150,14 +150,13 @@
 				</ul>
 			</nav>
 		</div>
-		<footer class="main-footer">
-            <div class="container-wrapper clearfix">
+		<footer class="main-footer clearfix">
 			    <div class="footer-maps-contact">
                     <div class="footer-maps"></div>
 			        <div class="footer-contact">
             	       <span class="contact-title"><strong>NЁRDS design studio</strong></span>
-                	   <p class="contact-address">350000, Краснодар,<br> ул. Головатого, 100</p>
-                	   <p class="contact-tel">тел. +7 (861) 275-75-75</p>
+                	   <p class="contact-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                	   <p class="contact-tel">тел. +7 (812) 275-75-75</p>
                 	   <a href="#" class="btn btn-for-write-us">Напишите нам</a>
             	   </div>
 			    </div>
@@ -182,16 +181,15 @@
         	    </form>
         	    <div class="footer-social">
         		    <div class="footer-social-btn">
-        			<a href="#" class="btn-social icon-social-vk"><img src="img/icon-vk.png" alt="vkontakte"></a>
-                	<a href="#" class="btn-social icon-social-fb"><img src="img/icon-fb.png" alt="facebook"></a>
-                	<a href="#" class="btn-social icon-social-inst"><img src="img/icon-inst.png" alt="instagram"></a>
+        			<a href="#" class="btn-social icon-social-vk"></a>
+                	<a href="#" class="btn-social icon-social-fb"></a>
+                	<a href="#" class="btn-social icon-social-inst"></a>
                     </div>
                     <div class="footer-social-description">
-                	<h4>Давайте дружить, это выгодно!</h4>
+                	<h2>Давайте дружить, это выгодно!</h2>
                 	<p class="fiture-discription">Скидка 10% для друзей из социальных сетей.</p>
                     </div>
         	    </div>
-            </div>
 		</footer>
 	</body>
 </html>
