@@ -760,7 +760,6 @@ input[type="checkbox"]:disabled + label {
 .catalog-filter-sort {
 	margin: 0;
 	padding: 0;
-    display: inline-block;
     margin-left: 10px;
     position: relative;
 }
